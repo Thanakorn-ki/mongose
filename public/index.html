@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="mid">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div ng-controller="midcontron">
+        <form ng-submit="save()">
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>
+                        <input type="text" ng-model="name"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>surname</td>
+                    <td>
+                        <input type="text" ng-model="surname"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>
+                        <input type="text" ng-model="age"></input>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <button type="submit">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <li ng-repeat="finds in find">
+            <ul>{{finds}}</ul>
+        </li>
+    </div>
+</body>
+
+</html>
